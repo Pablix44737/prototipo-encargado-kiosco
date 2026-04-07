@@ -18,20 +18,20 @@ Este proyecto es **no funcional** a nivel de negocio real:
 5. Consulta de productos consumidos y vencidos por período.
 
 ## Estructura
-- `src/prototipo/kiosco/VentanaPrincipalEncargado.java`: clase principal ejecutable.
-- `src/prototipo/kiosco/Panel*.java`: pantallas Swing.
-- `src/prototipo/kiosco/EstilosUI.java`: estilos visuales simples compartidos.
-- `src/prototipo/kiosco/NavegadorPantallas.java`: interfaz de navegación.
-- `build.xml` + `nbproject/`: estructura Java with Ant compatible con NetBeans.
+- `src/main/java/prototipo/kiosco/VentanaPrincipalEncargado.java`: clase principal ejecutable.
+- `src/main/java/prototipo/kiosco/Panel*.java`: pantallas Swing.
+- `src/main/java/prototipo/kiosco/EstilosUI.java`: estilos visuales simples compartidos.
+- `src/main/java/prototipo/kiosco/NavegadorPantallas.java`: interfaz de navegación.
+- `pom.xml`: configuración del proyecto Maven.
 
-## Cómo abrir y ejecutar en NetBeans
+## Cómo ejecutar con Maven
+```bash
+mvn clean compile
+mvn exec:java
+```
+
+## Abrir en NetBeans (Maven)
 1. Abrir NetBeans.
 2. Elegir **File > Open Project**.
 3. Seleccionar la carpeta raíz de este repositorio.
-4. Ejecutar el proyecto (la clase principal ya está configurada en `prototipo.kiosco.VentanaPrincipalEncargado`).
-
-## Ejecución rápida por consola
-```bash
-javac -d out src/prototipo/kiosco/*.java
-java -cp out prototipo.kiosco.VentanaPrincipalEncargado
-```
+4. Ejecutar el proyecto como aplicación Maven.
