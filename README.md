@@ -1,16 +1,37 @@
 # Prototipo Encargado - Kiosco San Antonio
 
-Prototipo navegable en Java Swing orientado a validar la aceptabilidad operativa
-de la solución propuesta para el rol Encargado.
+Prototipo navegable realizado en **Java Swing estándar** para demo académica del rol **Encargado**.
 
-## Alcance
-El prototipo no implementa lógica de negocio real ni persistencia.
-Solo simula pantallas y navegación para mostrar:
+## Importante
+Este proyecto es **no funcional** a nivel de negocio real:
+- No usa base de datos.
+- No tiene persistencia.
+- No implementa login.
+- No usa frameworks externos.
+- Solo simula pantallas, navegación y acciones con datos mock.
 
-- Apertura de cuenta corriente
-- Registro de consumo personal
-- Visualización de cierre de caja
-- Consulta de productos consumidos y vencidos
+## Pantallas incluidas
+1. Menú principal del Encargado.
+2. Aprobación/Rechazo de apertura de cuenta corriente.
+3. Registro de consumo personal.
+4. Visualización de cierre de caja.
+5. Consulta de productos consumidos y vencidos por período.
 
-## Objetivo
-Mostrar que la operatoria propuesta puede resultar simple y comprensible para el usuario.
+## Estructura
+- `src/prototipo/kiosco/VentanaPrincipalEncargado.java`: clase principal ejecutable.
+- `src/prototipo/kiosco/Panel*.java`: pantallas Swing.
+- `src/prototipo/kiosco/EstilosUI.java`: estilos visuales simples compartidos.
+- `src/prototipo/kiosco/NavegadorPantallas.java`: interfaz de navegación.
+
+## Cómo ejecutarlo en NetBeans
+1. Abrir NetBeans.
+2. Crear proyecto **Java with Ant** (o Java Application simple).
+3. Copiar la carpeta `src` de este repositorio al proyecto.
+4. Configurar `prototipo.kiosco.VentanaPrincipalEncargado` como clase principal.
+5. Ejecutar el proyecto.
+
+## Ejecución rápida por consola
+```bash
+javac -d out src/prototipo/kiosco/*.java
+java -cp out prototipo.kiosco.VentanaPrincipalEncargado
+```
