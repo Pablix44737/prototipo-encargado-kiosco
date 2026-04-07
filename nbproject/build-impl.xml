@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:if="ant:if" xmlns:unless="ant:unless" basedir=".." default="default" name="prototipo-encargado-kiosco-impl">
+    <fail message="Please build using Ant 1.10.0 or higher.">
+        <condition>
+            <not>
+                <antversion atleast="1.10.0"/>
+            </not>
+        </condition>
+    </fail>
+    <target depends="test,jar,javadoc" description="Build and test whole project." name="default"/>
+    <import file="nbproject/default.xml"/>
+</project>

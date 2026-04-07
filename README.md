@@ -22,13 +22,13 @@ Este proyecto es **no funcional** a nivel de negocio real:
 - `src/prototipo/kiosco/Panel*.java`: pantallas Swing.
 - `src/prototipo/kiosco/EstilosUI.java`: estilos visuales simples compartidos.
 - `src/prototipo/kiosco/NavegadorPantallas.java`: interfaz de navegación.
+- `build.xml` + `nbproject/`: estructura Java with Ant compatible con NetBeans.
 
-## Cómo ejecutarlo en NetBeans
+## Cómo abrir y ejecutar en NetBeans
 1. Abrir NetBeans.
-2. Crear proyecto **Java with Ant** (o Java Application simple).
-3. Copiar la carpeta `src` de este repositorio al proyecto.
-4. Configurar `prototipo.kiosco.VentanaPrincipalEncargado` como clase principal.
-5. Ejecutar el proyecto.
+2. Elegir **File > Open Project**.
+3. Seleccionar la carpeta raíz de este repositorio.
+4. Ejecutar el proyecto (la clase principal ya está configurada en `prototipo.kiosco.VentanaPrincipalEncargado`).
 
 ## Ejecución rápida por consola
 ```bash
