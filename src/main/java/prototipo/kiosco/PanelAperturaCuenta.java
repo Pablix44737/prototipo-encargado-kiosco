@@ -6,11 +6,9 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class PanelAperturaCuenta extends JPanel {
@@ -31,18 +29,14 @@ public class PanelAperturaCuenta extends JPanel {
         gbc.anchor = GridBagConstraints.WEST;
 
         JTextField txtCliente = new JTextField("María González", 25);
-        JTextField txtDni = new JTextField("30.456.789", 25);
-        JTextField txtLimite = new JTextField("$ 60.000", 25);
-        JComboBox<String> cmbEstado = new JComboBox<>(new String[]{"Pendiente", "En revisión"});
-        JTextArea txtObservaciones = new JTextArea("Cliente con historial de pagos correcto.", 4, 25);
-        txtObservaciones.setLineWrap(true);
-        txtObservaciones.setWrapStyleWord(true);
+        JTextField txtTelefono = new JTextField("3764411155", 25);
+        JTextField txtDni = new JTextField("30456789", 25);
+        JTextField txtLimite = new JTextField("60000", 25);
 
-        agregarFila(formulario, gbc, 0, "Cliente:", txtCliente);
-        agregarFila(formulario, gbc, 1, "DNI:", txtDni);
-        agregarFila(formulario, gbc, 2, "Límite sugerido:", txtLimite);
-        agregarFila(formulario, gbc, 3, "Estado:", cmbEstado);
-        agregarFila(formulario, gbc, 4, "Observaciones:", txtObservaciones);
+        agregarFila(formulario, gbc, 0, "Nombre cliente:", txtCliente);
+        agregarFila(formulario, gbc, 1, "Teléfono:", txtTelefono);
+        agregarFila(formulario, gbc, 2, "DNI cliente:", txtDni);
+        agregarFila(formulario, gbc, 3, "Monto límite:", txtLimite);
 
         add(formulario, BorderLayout.CENTER);
 
